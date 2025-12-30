@@ -3408,6 +3408,16 @@
 		)
 		(uuid "2a69e960-1ebe-4eb7-b8bf-08b483862e7d")
 	)
+	(text "Swap with 5V-5V DC-DC converter (Isolation)\n"
+		(exclude_from_sim no)
+		(at 158.242 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9562cd98-ed8a-419b-a6fb-2c49b2cda182")
+	)
 	(junction
 		(at 189.23 77.47)
 		(diameter 0)
@@ -3431,6 +3441,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67635ce1-55fa-4eec-9aec-d5d7e163c23c")
+	)
+	(junction
+		(at 227.33 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b6a177c-e1f9-4a84-a025-1c96adf45ceb")
 	)
 	(junction
 		(at 72.39 77.47)
@@ -3499,12 +3515,6 @@
 		(uuid "c9fa4c5d-5e93-432a-9262-d3f07050ee8b")
 	)
 	(junction
-		(at 233.68 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dbef8a4e-154e-4c3e-a20a-9d955590cb82")
-	)
-	(junction
 		(at 128.27 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3524,15 +3534,6 @@
 			(type default)
 		)
 		(uuid "00cd9399-e76f-41a0-9c92-a635305c8a16")
-	)
-	(bus_entry
-		(at 200.66 13.97)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01904144-0a62-4ed2-83e8-65199aadcb89")
 	)
 	(bus_entry
 		(at 213.36 76.2)
@@ -3569,6 +3570,15 @@
 			(type default)
 		)
 		(uuid "71f6f784-4abf-40ee-87ef-6eb18df16f87")
+	)
+	(bus_entry
+		(at 215.9 73.66)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ee0308-6941-40af-97cd-24713f921465")
 	)
 	(bus_entry
 		(at 198.12 13.97)
@@ -3686,9 +3696,19 @@
 		)
 		(uuid "0e2f4fb8-e5ef-4ab7-80bf-de533bd7adb2")
 	)
+	(wire
+		(pts
+			(xy 218.44 80.01) (xy 218.44 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed1b822-2046-4a4a-b1ca-b96c07024ac2")
+	)
 	(bus
 		(pts
-			(xy 198.12 13.97) (xy 200.66 13.97)
+			(xy 198.12 13.97) (xy 218.44 13.97)
 		)
 		(stroke
 			(width 0)
@@ -3855,6 +3875,16 @@
 			(type default)
 		)
 		(uuid "4415cfab-8a73-4d0d-a2a8-a0c5bc07b9e7")
+	)
+	(wire
+		(pts
+			(xy 227.33 80.01) (xy 218.44 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49af6cfb-40b5-49ef-8624-a1d4e2dd3eb0")
 	)
 	(wire
 		(pts
@@ -4208,16 +4238,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 16.51) (xy 203.2 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f6af272-c41a-471b-a420-a82afc5c1ac0")
-	)
-	(wire
-		(pts
 			(xy 167.64 88.9) (xy 233.68 88.9)
 		)
 		(stroke
@@ -4225,16 +4245,6 @@
 			(type default)
 		)
 		(uuid "9236a664-57bf-458a-b935-a5fd4939b805")
-	)
-	(bus
-		(pts
-			(xy 200.66 13.97) (xy 218.44 13.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94066693-40a0-4e62-aeb1-1da1f70e3a3b")
 	)
 	(wire
 		(pts
@@ -4245,16 +4255,6 @@
 			(type default)
 		)
 		(uuid "99b54321-2260-45ce-9d94-8acecbd857c4")
-	)
-	(wire
-		(pts
-			(xy 233.68 36.83) (xy 233.68 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e3591fc-ac4e-4dd9-88d7-670c6e88f732")
 	)
 	(wire
 		(pts
@@ -4275,6 +4275,16 @@
 			(type default)
 		)
 		(uuid "a3e7b03f-9a7f-4df3-b576-084eef676996")
+	)
+	(bus
+		(pts
+			(xy 215.9 73.66) (xy 215.9 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a50105f5-3e4c-403d-9fb3-6c98814eee14")
 	)
 	(wire
 		(pts
@@ -4345,6 +4355,16 @@
 			(type default)
 		)
 		(uuid "b0e2fbef-ef90-43e0-bed3-75dc6f0eb948")
+	)
+	(wire
+		(pts
+			(xy 227.33 72.39) (xy 227.33 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b21886f8-8aea-4a27-9698-3325d93ee86d")
 	)
 	(wire
 		(pts
@@ -4488,6 +4508,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 45.72) (xy 233.68 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1429bd7-182d-43a2-8245-1a35082f72a1")
+	)
+	(wire
+		(pts
 			(xy 25.4 97.79) (xy 40.64 97.79)
 		)
 		(stroke
@@ -4555,16 +4585,6 @@
 			(type default)
 		)
 		(uuid "d9932482-2750-4f6a-87ff-f65974d54145")
-	)
-	(wire
-		(pts
-			(xy 233.68 29.21) (xy 233.68 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da99e127-8bb3-450a-9a98-f6cea3ff4ae8")
 	)
 	(wire
 		(pts
@@ -4678,7 +4698,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 45.72) (xy 233.68 45.72)
+			(xy 226.06 45.72) (xy 227.33 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4728,7 +4748,7 @@
 	)
 	(bus
 		(pts
-			(xy 215.9 71.12) (xy 215.9 76.2)
+			(xy 215.9 71.12) (xy 215.9 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4806,7 +4826,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09fe7505-2630-4497-9feb-77548308169c")
-		(property "Reference" "Q2"
+		(property "Reference" "MOSFET"
 			(at 85.09 71.12 90)
 			(effects
 				(font
@@ -4814,7 +4834,7 @@
 				)
 			)
 		)
-		(property "Value" "Q_NMOS_GDS"
+		(property "Value" "IXFH80N65X2"
 			(at 85.09 73.66 90)
 			(effects
 				(font
@@ -4861,7 +4881,7 @@
 		(instances
 			(project "Circuit_Diagram"
 				(path "/866ecc8a-ec11-4793-ac61-b439165b2991"
-					(reference "Q2")
+					(reference "MOSFET")
 					(unit 1)
 				)
 			)
@@ -5708,7 +5728,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20Ω"
+		(property "Value" "220"
 			(at 86.36 27.9399 0)
 			(effects
 				(font
@@ -5829,7 +5849,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 233.68 33.02 0)
+		(at 227.33 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5838,7 +5858,7 @@
 		(fields_autoplaced yes)
 		(uuid "92d1bb9f-6c34-415b-b7e4-0a6250cccff8")
 		(property "Reference" "C2"
-			(at 237.49 31.7499 0)
+			(at 231.14 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5847,7 +5867,7 @@
 			)
 		)
 		(property "Value" "1μF"
-			(at 237.49 34.2899 0)
+			(at 231.14 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,7 +5876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.6452 36.83 0)
+			(at 228.2952 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5865,7 +5885,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 33.02 0)
+			(at 227.33 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5874,7 +5894,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 233.68 33.02 0)
+			(at 227.33 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6556,7 +6576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebfb5a3d-a551-4f00-bccc-e8a73e6d0be1")
-		(property "Reference" "MOSFET"
+		(property "Reference" "Diode"
 			(at 105.41 92.7099 90)
 			(effects
 				(font
@@ -6565,7 +6585,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IXFH80N65X2"
+		(property "Value" "DSEI30-06A"
 			(at 105.41 95.2499 90)
 			(effects
 				(font
@@ -6628,7 +6648,7 @@
 		(instances
 			(project ""
 				(path "/866ecc8a-ec11-4793-ac61-b439165b2991"
-					(reference "MOSFET")
+					(reference "Diode")
 					(unit 1)
 				)
 			)
